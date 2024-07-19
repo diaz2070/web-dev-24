@@ -71,3 +71,48 @@ Each heading element is going to have different color based on their heading lev
   ```
 
 - Universal selector (selects everything in the html file)
+
+## Color properties
+
+There are named colors, named colors establish a name to a specific color. But this doesn't limit using other types of color formats like hex or rgb.
+
+``` css
+h1 {
+  color: red;
+}
+```
+
+``` css
+h1 {
+  color: #C58940;
+}
+```
+
+## Font properties
+
+Font size can be change with font-size property. It can be modified through pixels (px) or points (pt).
+
+Other ways of modifying font size is:
+
+- 1em (100% of parent)
+- 1rem (100% of root) <- way more consistent
+
+### Font Weight
+
+- Keyword: normal, bold
+- Relative to parent: lighter(-100), bolder(+100)
+- Number (how bold or light the text will be in a scale): 100 -  900
+
+### Font family
+
+Font family determines how the text will look like, for example: helvetica, sans-serif, times new roman, etc.
+
+``` css
+h1 {
+  font-family: "Times New Roman", serif;
+}
+```
+
+### Text align
+
+Property to set the horizontal alignment of text. Either left, center, right, etc.
