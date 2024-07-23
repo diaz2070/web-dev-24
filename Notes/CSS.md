@@ -207,3 +207,31 @@ Relative positioning: position relative to default position
 Absolute positioning: position relative to nearest positioned ancestor or top left corner of webpage
 
 Fixed positioning: position relative to top corner of browser window.
+
+## CSS Display
+
+Common types of display are: inline, block, inline-block and none.
+
+## CSS Float
+
+In order for a element to wrap around other elements then the float property comes in.
+
+It is useful to use the property clear when a element doesn't need to be wrapped around another one.
+
+``` css
+img {
+  float: left;
+}
+
+footer {
+  clear: left;
+}
+```
+
+## Responsive Websites
+
+Resposiveness is a key factor of today's websites. It states adaptability of software independent of the user's device.
+
+### Media queries
+
+Media queries are a way to define different css rules based on the device's size.
