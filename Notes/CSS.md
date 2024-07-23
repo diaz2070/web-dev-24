@@ -116,3 +116,94 @@ h1 {
 ### Text align
 
 Property to set the horizontal alignment of text. Either left, center, right, etc.
+
+## CSS Box Model
+
+Boxes in css can be adjusted and styled with margin, padding and border. When styling this properties it can hava a maximum of 4 values, it goes in a clockwise direction, first top, then left, bottom and finally right.
+
+div tags works as invisible containers to hold different content together.
+
+## CSS priority levels
+
+This is where the cascading concept comes in play to styling websites.
+
+1. Position
+  
+    - Whether a css rule has a higher or lower position in the css file. The lower rule will be applied at last.
+
+2. Specificity
+
+    - It has to do of how specific a css selector is. The order goes (where number one is the higher priority level):
+        1. Id selector
+        2. Attribute selector
+        3. Class selector
+        4. All tag elements
+
+3. Type
+    - Then it goes the type of css that is applied. The order goes from most important to least: inline, internal, external.
+
+4. Importance
+
+    - The !important keyword can be added to a css rule and it overrides every other rules.
+
+## Combining css selectors
+
+CSS selectors can be combined through different classes and elements. For example:
+
+```css
+.inner-box p {
+  color: white;
+}
+```
+
+This would target all p elements inside of the div(s) with class inner-box.
+
+### Multiple selectors
+
+```css
+h1, h2 {
+  color: blueviolet;
+}
+```
+
+### Child selectors
+
+Works with the right angle bracket > to select a child of another selector. Only one level of child.
+
+```CSS
+.box > p {
+  color: firebrick;
+}
+```
+
+### Descendant selectors
+
+This type of selector is similar to child but happens in any level of descendants.
+
+```CSS
+.box li {
+  color: blue;
+}
+```
+
+In this css rule, every li a level below .box elements will have a text color of blue.
+
+### Chaining
+
+This is where selectors are chained together to apply rules to a single element.
+
+``` css
+li.done {
+  color: seagreen;
+}
+```
+
+## CSS Positioning
+
+Static positioning: html default flow
+
+Relative positioning: position relative to default position
+
+Absolute positioning: position relative to nearest positioned ancestor or top left corner of webpage
+
+Fixed positioning: position relative to top corner of browser window.
