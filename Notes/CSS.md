@@ -235,3 +235,29 @@ Resposiveness is a key factor of today's websites. It states adaptability of sof
 ### Media queries
 
 Media queries are a way to define different css rules based on the device's size.
+
+## Flexbox
+
+Flexbox is a way to achieve structure within a website. It helps by giving a more flexible (no pun intended) method to divide or bring together elements.
+
+[CSS flexbox cheatsheet](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+### Flex direction
+
+When the flex-direction of a container is set to row then the main axis is horizontal. Instead, if it is set to column, the main axis is vertical.
+
+### Flex wrap
+
+The property flex-wrap can be set in the parent element for it's child elements to wrap around the page when there is not enought space.
+
+### Justify content
+
+Justify-content property sets the children in the main axis.
+
+### Align items
+
+Align items is used to align flex items along the cross axis. Children elements can have a separate property called align-self.
+
+### Align content
+
+This property only works when flex-wrap is set to wrap.
