@@ -261,3 +261,79 @@ Align items is used to align flex items along the cross axis. Children elements 
 ### Align content
 
 This property only works when flex-wrap is set to wrap.
+
+## CSS Grid
+
+Grid is a tool to laying out content in a two dimensional layout.
+
+In css grid, the column's ratio and row's ratio have to be established.
+
+```CSS
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+```
+
+### Grid Sizing
+
+- Auto sizing
+
+``` CSS
+.grid-container {
+  display: grid;
+  grid-template-rows: 100px auto;
+  grid-template-columns: 200px auto;
+}
+```
+
+- Fixed sizing
+
+``` CSS
+.grid-container {
+  display: grid;
+  grid-template-rows: 100px 200px;
+  grid-template-columns: 400px 800px;
+}
+```
+
+- Fractional sizing
+
+``` CSS
+.grid-container {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr 2fr;
+}
+```
+
+- Min-max sizing
+
+``` CSS
+.grid-container {
+  display: grid;
+  grid-template-rows: 200px minmax(400px, 5fr);
+  grid-template-columns: 200px minmax(400px, 5fr);
+}
+```
+
+- Repeat sizing
+
+``` CSS
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(2, 200px);
+  grid-template-columns: repeat(2, 200px);
+  grid-auto-rows: 300px;
+}
+```
+
+! A tip for adding more rows or columns that initially expected is to use grid auto row and set a size.
+
+## Bootstrap
+
+Is a CSS framework, pre-made CSS files easy to include into website projects.
+
+Remember to state my own stylesheet after bootstrap if any style has to be overwritten.
