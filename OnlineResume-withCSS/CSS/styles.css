@@ -1,0 +1,341 @@
+body {
+  background-color: #EFEFEF;
+  font-family: "Inter", sans-serif;
+}
+
+.navbar {
+  background-color: #223246;
+}
+
+.svg-icon {
+  color: #FFFFFF;
+  margin-right: 10px;
+}
+
+.main-section-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  height: 95vh;
+  padding-top: 50px;
+
+  background: rgb(25,42,58);
+  background: radial-gradient(circle, #192a3a 15%, #6384a3 50%, #9cc7f0 90%);
+  color: white;
+
+  text-align: center;
+}
+
+.first-subtitle {
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  margin-bottom: 35px;
+  font-weight: 400;
+}
+
+.name-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 70px;
+}
+
+.profile-picture {
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.small-description{
+  font-size: 25px;
+  width: 40%;
+}
+
+.skills {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.skill-titles {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 45px;
+  color: #215B92;
+}
+
+.skills-description {
+  font-size: 20px;
+  margin: 30px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  margin: 50px auto 0 auto;
+  width: 50%;
+  gap: 2.5rem;
+}
+
+
+.personal {
+  display: flex;
+  justify-content: center;
+}
+
+.personal-projects {
+  width: 95%;
+  
+  margin-top: 20px;
+  padding: 50px;
+
+  text-align: center;
+  background-color: #192A3A;
+  color: white;
+  border-radius: 15px;
+}
+
+.projects-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+.project-component > h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;;
+  font-size: 30px;
+}
+
+.project-component > p {
+  font-size: 20px;
+}
+
+.about-me-section {
+  display: flex;
+  justify-content: center;
+}
+
+.about-me {
+  width: 95%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  gap: 8rem;
+}
+
+.selfie-barry {
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.about-me h3 {
+  color: #215B92;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-me p, .about-me li{
+  font-size: 22px;
+  text-align: justify;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #192A3A;
+  color: white;
+
+  text-align: center;
+}
+
+.contact-me > h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  padding-top: 40px;
+  margin-bottom: 30px;
+}
+
+.content-subtitle {
+  font-size: 25px;
+  width: 60%;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
+
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.contact-componenet > h3 {
+  font-size: 30px;
+}
+
+.contact-component-paragraph{
+  margin: auto;
+  width: 70%;
+  font-size: 15px;
+}
+
+.contact-icon {
+  height: 75px;
+  height: 75px;
+  margin-bottom: 10px;
+}
+
+.footer-section {
+  background-color: #192A3A;
+  margin-bottom: 0;
+}
+
+.footer-section img {
+  height: 30px;
+  width: 30px;
+}
+
+@media (max-width: 1500px) {
+  .personal-projects {
+    width: 90%;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+    grid-row: auto;
+  }
+  .about-me {
+    grid-template-columns: 1fr;
+    place-items: center;
+    width: 90%;
+    gap: 2em;
+    text-align: center;
+  }
+
+  .selfie-barry {
+    height: 623px;
+    width: 489px;
+  }
+
+  .contact-container {
+    margin-top: 20px;
+  }
+
+  .contact-me > h2 {
+    font-size: 35px;
+  }
+
+  .content-subtitle {
+    font-size: 20px;
+  }
+
+  .contact-componenet > h3 {
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 1010px) {
+  .skills-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+  }
+  
+}
+
+@media (max-width: 920px) {
+  .small-description{
+    width: 50%;
+  }  
+}
+
+@media (max-width: 720px) {
+  .personal-projects {
+    width: 95%;
+  }
+
+  .project-component > h3 {
+    font-size: 25px;
+  }
+
+  .project-component > p {
+    font-size: 15px;
+  }
+
+}
+
+@media (max-width: 670px) {
+  .main-section-profile {
+    height: 100%;
+  }
+  .small-description{
+    width: 90%;
+  }
+
+  .icon {
+    height: 100px;
+    width: 100px;
+  }
+
+  .project-screenshot {
+    height: 168px;
+    width: 300px;
+  }
+  
+  .selfie-barry {
+    height: auto;
+    width: 400px;
+  }
+
+  .about-me h3 {
+    font-size: 40px;
+  }
+
+  .about-me p, .about-me li{
+    font-size: 15px;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 420px) {
+  .icon {
+    height: 75px;
+    width: 75px;
+  }
+
+  .project-component {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+
+  .project-screenshot {
+    height: 162px;
+    width: 250px;
+  }
+
+  .selfie-barry {
+    height: auto;
+    width: 300px;
+  }
+}
+
