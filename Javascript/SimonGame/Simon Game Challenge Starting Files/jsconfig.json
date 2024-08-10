@@ -1,0 +1,9 @@
+
+// jquery intelissense config
+{
+  "typeAcquisition": {
+      "include": [
+          "jquery"
+      ]
+  }
+}
